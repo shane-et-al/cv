@@ -1,0 +1,133 @@
+@font-face {font-family: 'CallunaSans-Regular'; src: url('assets/typeface/244165_1_0.eot');src: url('assets/typeface/244165_1_0.eot?#iefix') format('embedded-opentype'),url('assets/typeface/244165_1_0.woff') format('woff'),url('assets/typeface/244165_1_0.ttf') format('truetype');}
+@font-face {font-family: 'GeoticaThree-Regular'; src: url('assets/typeface/244165_0_0.eot');src: url('assets/typeface/244165_0_0.eot?#iefix') format('embedded-opentype'),url('assets/typeface/244165_0_0.woff') format('woff'),url('assets/typeface/244165_0_0.ttf') format('truetype');} 
+
+a {
+	color: #7C1818;
+	text-decoration: none;
+	font-family: CallunaSans-Regular;
+}
+
+header {
+	text-align: center;
+	margin-top: -36px;
+}
+
+.name{
+	color: #000000; 
+    text-align: left;
+	padding: 0;
+}
+
+.name h1{
+	font-size: 80px;
+    text-align: left;
+	font-family: GeoticaThree-Regular;
+	font-weight: lighter;
+	height: 40px;
+	padding-left: 45px;
+}
+
+.name .title{
+	font-size: 20px;
+    text-align: left;
+	width: 400px;
+	padding-left: 45px;
+}
+
+.nameplate {
+	display:block;
+	position:absolute;
+    bottom:0;
+    right:0;
+	
+	width:500px;
+	margin: 50px;
+	padding: 10px;
+	border-radius: 40px;
+	color: #FFF;
+	
+/*	background: rgba(176, 196, 222, 0.6);
+	background: rgba(220, 220, 220, 0.6);
+	background: rgba(112, 128, 154, 0.88);*/
+	background: rgba(146, 166, 192, 0.88);
+}
+
+.nameplate a{
+	font-weight: bolder;
+}
+
+html {
+  background: FloralWhite;
+  font-family: CallunaSans-Regular;
+	
+}
+
+.navbar {
+
+	
+}
+
+.navbar ul {
+	list-style: none;
+	margin-left: 20px;
+	padding-left: 0
+}
+
+.navbar li {
+	display:inline-block;
+	margin-right: 10px;
+	text-align: center;
+	width: 100px;
+}
+
+.navbar {
+	margin-top:30px;
+}
+
+.navbar img{
+	width: 50px;
+	height: 50px;
+    border: 0px solid #ccc;
+	border-radius: 50px;
+    float: left;
+    margin-top: 5px;
+	margin-left: 20px;
+	padding: 5px;
+}
+ 
+.navbar img:hover {
+	border: 5px solid #DDDDDD;
+	padding: 0px;
+}
+
+.navbar {hover: none;}
+
+
+#bg_div { 
+	z-index:-1;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+}
+
+
+#bg_div > img { 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+}
+
+
+.bg{
+	position:fixed;
+	top:  0;
+	left: 0;
+}
+
+.bgwidth { max-width: 100%; }
+.bgheight { max-height: 100%; }
+

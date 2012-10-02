@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Shane Lin</title>
+        <link rel="stylesheet" type="text/css" href="default.css" />
+        <link rel="stylesheet" type="text/css" href="assets/lightbox/lb.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="index.js"></script>
+        <script>
+			$(function() {				
+				$("#bg_div > img").hide();
+			});
+		</script>
+    </head>
+    <body>
+    	<div class="nameplate">
+            <header>
+                <div class="name">
+                    <h1>Shane Lin</h1>
+                    <span class="title">Scholar, Photographer, Scoundrel</span> 
+                </div>
+            </header>
+            
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="#cv-lb">
+                        	<div>About</div>
+	                        <div class="icon"><img src="assets/images/icons/cv.png"/></div>
+                        </a>
+                    </li>
+            
+                    <li>
+                    	<a href="http://photo.shanelin.com/gallery/3969744" target="_new">
+                        	<div>Photography</div>
+	                        <div class="icon"><img src="assets/images/icons/photo.png"/></div>
+                        </a>
+                    </li>
+            
+                    <li>
+                    	<a href="mailto:ssl2ab@virginia.edu" target="_self">
+                        	<div>Contact</div>
+	                        <div class="icon"><img src="assets/images/icons/contact.png"/></div>
+                        </a>
+                    </li>
+              </ul>
+            </nav>  
+	    </div>    
+    </div>
+
+    <div class="lb-overlay" id="cv-lb">
+            <a href="#page" class="lb-close">x Close</a>
+            <img src="assets/images/portrait.jpg"/>
+            <div class="lb-text">
+                <h3>Education</h3>
+                <p> 2011-present — Ph.D Candidate<br>Corcoran Department of History <br> University of Virginia</p>
+                <p> 2004-2007 — B.A. <br> Computer Science & History<br>Special Honors in History<br>University of Texas at Austin</p>
+            </div>
+            <div class="lb-text">
+                <h3>Employment</h3>
+                <p> 2007-2011 Amazon.com<br>Software Development Engineer</p>
+            </div>
+            <div class="lb-text">
+                <h3>Grants and Fellowships</h3>
+                <p> President’s Fellowship<br>University of Virginia</p>
+                <p> Praxis Program<br>Digital Humanities Fellowship<br>Scholar's Lab at the University of Virginia</p>
+            </div>
+            <div class="lb-text">
+                <h3>Patents</h3>
+                <p> U.S. Patent 8,060,414<br>Encoding and Decoding of Product Properties in a Uniform Resource Locator </p>
+            </div>
+            <div class="lb-text">
+                <h3>Download</h3>
+                <p> <a href="https://dl.dropbox.com/u/21533066/resume2012.pdf">PDF Format</a></p>
+            </div>
+            
+		</div>
+    
+    <div id="bg_div">
+	    <img src="assets/images/bg/start.jpg" class="bg bgwidth" alt=""/>
+	    <img src="assets/images/bg/a.jpg" class="bg bgwidth" alt=""/>
+    	<img src="assets/images/bg/a0.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a1.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a2.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a3.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a4.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a5.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a6.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a7.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a8.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a9.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a10.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a11.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a12.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a13.jpg" class="bg bgwidth" alt=""/>
+        <img src="assets/images/bg/a14.jpg" class="bg bgwidth" alt=""/>
+    </div>
+    
+    <script>
+			$(function transition() {				
+				$("#bg_div > img").hide();
+				$("#bg_div > img:first").fadeIn(3000);
+				setInterval(function() { 
+				  $('#bg_div > img:first')
+					.fadeOut(1300)
+					.next()
+					.fadeIn(1300)
+					.end()
+					.appendTo('#bg_div');
+				},  8000);
+			});
+	</script>
+	
+</body>
+</html>
